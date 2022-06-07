@@ -1,79 +1,105 @@
+/*
+› Create By @RIY
+› Base Ori @DikaArdnt
+› Kalau mau tambahin fitur di index.js
+› Edit text menu di file language › help.js
+*/
 
-  const fs = require('fs')
-  const chalk = require('chalk')
+//gausah di apa² in!
+const fs = require('fs')
+const chalk = require('chalk')
 
-  // Free Apikey
-  global.APIs = {
-  riy: 'https://api-riy.herokuapp.com',
-  }
+//—————「 Website Apikey 」—————//
+global.APIs = {
+//gausah di apa² in!
+zenz: 'https://zenzapis.xyz',
+}
 
-  global.APIKeys = {
-  'https://api-riy.herokuapp.com': 'RiyGanz',
-  }
+//—————「 Website Apikey 」—————//
+global.APIKeys = {
+//gausah di apa² in, udah free apikey :)
+'https://zenzapis.xyz': 'BagasPrdn',
+}
 
-  // Edit Sesuai Kemauanmu
-  global.autoReadGc = true // Ubah Ke false Jika Chat Di Grup Tidak Ingin Di Baca Oleh Bot
-  global.autoReadAll = false // Ubah Ke true Jika Ingin Seluruh Chat Di Baca Oleh Bot
-  global.anticall = true // Ubah Ke false Jika Tidak Ingin Bot Blockir Yang Telepon
-  global.available = false // Ubah Ke false Jika Bot Mu Tidak Ingin Terlihat Online
-  global.autoTyping = false // Ubah Ke true Jika Ingin Saat Ada Yang Chat Bot Auto Mengetik
-  global.autoRecord = true // Ubah Ke false Jika Tidak Ingin Saat Ada Yang Chat Bot Auto Merekam
-  global.multiplier = 69 // Semakin Besar Angkanya Semakin Sulit Untuk Naik Level
-  global.limitCount = 70 // 70 Dah Pas Banh
-  global.prefa = ['','.','/','#']
+//—————「 Setting Owner 」—————//
+global.owner = ['6281575886399','6281575886399','6281575886399'] //ubah jadi nomor mu, note tanda ' gausah di hapus!
+global.premium = ['6281575886399'] //ubah jadi nomor mu, note tanda ' gausah di hapus!
+global.ownernomer = '6281575886399' //ubah jadi nomor mu, note tanda ' gausah di hapus!
 
-  // Other
-  global.ownername = 'Riy' // Ganti Jadi Namamu
-  global.owner = ['6281575886399','6281575886399','6285813334446'] // Kalo Mau Lebih Tambahin Aja
-  global.ownernomer = '6281575886399' // Owner Utama Istilahnya
-  global.botname = 'Hinata Hyuga' // Ganti Jadi Nama Botmu
-  global.packname = 'Hinata Hyuga' // Sticker Weem
-  global.author = 'Riy' // Sticker Weem
-  global.webme = 'https://api-riy.herokuapp.com' // Ganti Sama Web Mu
-  global.linkgroup = 'https://chat.whatsapp.com/HZhLynp6E9QKNrRFtUp26T' // Ganti Sama Link Gc Mu
-  global.sessionName = 'session'
-  global.youtube = 'https://youtube.com/channel/UCtM-pDaaGVRe4BJ7w4qE4Bw' // Ganti Sama Link Yt Mu
-  global.github = 'https://github.com/riychdwayne' // Ganti Sama Link Github Mu
-  global.instagram = 'https://instagram.com/riychdwayne' // Ganti Sama Link Ig mu
+//—————「 Set Nama Own & Bot 」—————//
+global.ownername = 'mia' //ubah jadi nama mu, note tanda ' gausah di hapus!
+global.botname = 'Chika-Md' //ubah jadi nama bot mu, note tanda ' gausah di hapus!
+global.footer = 'RIY' //ubah jadi nama mu, note tanda ' gausah di hapus!
 
-  // Background Setiap Menu
-  global.bg1 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-  global.bg2 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=monarch-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-  global.bg3 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=yolo-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-  global.bg4 = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fun-run-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+//—————「 Set Kebutuhan Button & Kontak 」—————//
+//ubah aja kalau ada yang gapunya gsh di hps anggap aja credits :), note tanda ' gausah di hapus!
+global.youtube = 'https://youtube.com/channel/UCtM-pDaaGVRe4BJ7w4qE4Bw'
+global.ig = 'https://instagram.com/riychdwayne'
+global.mygc = 'https://chat.whatsapp.com/CRY23lVKmXB7sCMhHmcwVw'
+global.myweb = 'https://s.id/RiyAPIs'
+global.email = 'riychdwaynee@gmail.com'
+global.region = 'indonesia'
 
-  // Tips Menu
-  global.tips1 = 'Gunakan Jeda 3 Detik Agar Bot Tidak Mati Akibat Spam 🚀'
-  global.tips2 = 'Jika Kamu Ingin Bermain RPG Hubungi Admin Untuk Mengaktifkan Fitur RPG ⚔️'
-  global.tips3 = 'Jika Kamu Ingin Request/Repport Fitur, Cukup Ketik *.repport Laporannya* 👮'
-  global.tips4 = 'Jika Kamu Sedang Gabut, Kamu Bisa Memainkan Fitur Game Yang Tersedia 🕹️'
-  global.tips5 = 'Jika Kamu Ingin Mendownload Video Youtube, Cukup Ketik *.ytmp4 <link>* 📥'
+//—————「 Set Wm 」—————//
+global.packname = '© Chika-Md' //ubah jadi nama bot mu, note tanda ' gausah di hapus!
+global.author = 'RIY' //ubah jadi nama mu, note tanda ' gausah di hapus!
 
-  // Edit Sesuai Kemauan Mu
-  global.rpg = {
-  limitEnd: 'Limit Anda Habis\n\n📝 Note : Limit Akan Di Reset Setiap Jam 21:00',
-  }
+//—————「 Set Nama Session 」—————//
+//gausah di apa² in!
+global.sessionName = 'session'
 
-  // Edit Sesuai Kemauanmu
-  global.mess = {
-  admin: '_Lu Admin? 🤨_',
-  botAdmin: '_Bot Bukan Admin 😔_',
-  owner: '_Lu Bukan Owner Gw 😠_',
-  group: '_Khusus Group 😏_',
-  private: '_Khusus Private Chat_',
-  bot: '_Khusus Pengguna Nomer Bot_',
-  wait: '_Sabar Sedang Di Proses ..._',
-  done: '_Done Ngab 🤗_',
-  }
+//—————「 Set Limit 」—————//
+//terserah mau ubah atau nggak, note : tanda ' gausah di hapus!
+global.limitawal = {
+premium: "Infinity",
+free: 15,
+}
 
-  // Kalo Mau Menyesuaikan Nama File Foto Nya
-  global.thumb = fs.readFileSync('./media/hinata.jpg')
-    
-  // Ini Gausah Diubah
-  let file = require.resolve(__filename)
-  fs.watchFile(file, () => {
-  fs.unwatchFile(file)
-  console.log(chalk.redBright(`Update'${__filename}'`))
-  delete require.cache[file]
-  require(file)
-  })
+//—————「 Set Image 」—————//
+//terserah mau ubah apa nggak, menurut gua jangan di ubah!
+global.thumb = fs.readFileSync('./image/chika.jpg')
+global.veloriy = fs.readFileSync('./image/chika.mp4')
+
+//—————「 Set Image Welcome 」—————//
+//terserah mau ubah apa nggak, menurut gua jangan di ubah!
+global.BgWelcLeav = 'https://telegra.ph/file/ca207893ae26d531cd9c6.jpg'
+
+//—————「 Set Random Image Menu 」—————//
+//gausah di apa² in!
+global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+
+//—————「 Set Prefix 」—————//
+//gausah di apa² in!
+global.prefa = ['','!','.','🐦','🐤','🗿']
+
+//—————「 Set Simbol 」—————//
+//terserah mai ubah atau nggak, note : tanda ' gausah di hapus!
+global.sp = '⭔'
+
+//—————「 Set Message 」—————//
+//terserah mau ubah apa nggak, note : tanda ' gausah di hapus!
+global.mess = {
+success: '_Done._',
+admin: '_Fitur Khusus Admin Group!_',
+botAdmin: '_Bot Harus Menjadi Admin Terlebih Dahulu!_',
+owner: '_Fitur Khusus Owner Bot_',
+group: '_Fitur Digunakan Hanya Untuk Group!_',
+private: '_Fitur Digunakan Hanya Untuk Private Chat!_',
+bot: '_Fitur Khusus Pengguna Nomor Bot_',
+wait: '_Sedang Di Proses..._',
+error: '_Fitur Sedang Error!_',
+endLimit: '_Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12_',
+}
+
+//—————「 Batas Akhir 」—————//
+//gausah si apa² in!
+let file = require.resolve(__filename)
+fs.watchFile(file, () => {
+fs.unwatchFile(file)
+console.log(chalk.redBright(`Update'${__filename}'`))
+delete require.cache[file]
+require(file)
+})
