@@ -26,9 +26,9 @@
   global.ownername = 'mia' // Ganti Jadi Namamu
   global.owner = ['6281575886399','6281575886399','6285813334446'] // Kalo Mau Lebih Tambahin Aja
   global.ownernomer = '6281575886399' // Owner Utama Istilahnya
-  global.botname = 'RIMA SANGE' // Ganti Jadi Nama Botmu
-  global.packname = 'RIMA SANGE' // Sticker Weem
-  global.author = 'Riy' // Sticker Weem
+  global.botname = 'RIMASANGE' // Ganti Jadi Nama Botmu
+  global.packname = 'RIMASANGE' // Sticker Weem
+  global.author = 'Rohman' // Sticker Weem
   global.webme = 'https://api-riy.herokuapp.com' // Ganti Sama Web Mu
   global.linkgroup = 'https://chat.whatsapp.com/HZhLynp6E9QKNrRFtUp26T' // Ganti Sama Link Gc Mu
   global.sessionName = 'session'
